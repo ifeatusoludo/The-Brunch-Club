@@ -1,13 +1,63 @@
 <! DOCTYPE html>
 <html>
+<title>THE BRUNCH CLUB</title>
 <meta charset="UTF-8">
 <meta name="viewpoint" content="width=device-width, initial scale=1"> 
 	<head>
-		<title> THE BRUNCH CLUB </title>
 		<link rel='stylesheet' type='text/css' href='brunch club.css'>
+		<style> 
+			header {
+					text-align: right;
+					font-family:sans-serif;
+				}
+			a {
+					color: white;
+				}
+			ul {
+					padding: 10px;
+					background: black;
+				}
+			li {
+					display: inline;
+					padding: 0x 30px 0px 30px;
+				}
+		</style> 
 		</head>
 	<body>
-		<h1> THE BRUNCH CLUB</h1>
-		<p> Hello. This is the start of something AMAZING!!! </p>
+		<header>
+			<!-- Navigation --> 
+			<div class="topnav" id="myTopnav">
+				<a href="#home">HOME</a>
+				<a href="#about">ABOUT</a>
+				<a href="#categories">CATEGORIES</a>
+				<a href="#submissions">SUBMISSIONS</a>
+				<a href="#contact">CONTACT</a>
+			</div>
+		<script>
+			function myFunction() {
+				var x = document.getElementByID("myTopnav");
+				if (x.className === "topnav") {
+					x.className += "responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+		</script>
+		</header>
+		<!-- Slide Show -->
+			<section>
+				<img class="mySlides" src="Brunch Flatlay - Nicer.jpg" style="width:100%">
+				<img class="mySlides" src="Brunch Flatlay 2.jpg" style="width:100%">
+				<img class="mySlides" src="Brunch Flatlay 3.jpg" style="width:100%">
+			</section>
+	<section>
+		<h1>ABOUT / WHAT IS THIS SITE?</h1>
+	</section>
+	<section>
+		<h1>WHAT KIND OF BRUNCH DO YOU WANT?</h1>
+	</section>
+	<section>
+		<h1>GIVE US YOUR BEST BRUNCH SPOT.</h1>
+	</section>
 	</body>
 </html>
