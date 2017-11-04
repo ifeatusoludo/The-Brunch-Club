@@ -113,4 +113,22 @@ p {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.column {
+    float: left;
+    width: 45%;
+    font-family: futura;
+    color: grey;
+    padding: 15px;
+} 
+}
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
