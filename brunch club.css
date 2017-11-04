@@ -181,7 +181,16 @@ p {
 	background-color: white;
 	opacity: 0.8;
 }
+.column {
+    float: left;
+    width: 45%;
+    font-family: futura;
+    color: grey;
+    padding: 15px;
+} 
+}
 
+<<<<<<< HEAD
 .footer {
 	position: relative;
 	left: 0;
@@ -193,4 +202,15 @@ p {
 	text-align: center;
 	font-family: futura;
 
+=======
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+>>>>>>> 8e9eaa55eb26d233b7b6e5502d50b250e1005cf4
 }

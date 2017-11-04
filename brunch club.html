@@ -62,6 +62,7 @@
 		</div>
 		</section>
 
+<<<<<<< HEAD
 		<div class="footer">
 			<h3>Contact Us</h3>
 			<ul>
@@ -70,5 +71,42 @@
 				<li>Google+</li>
 			<ul>
 		</div>
+=======
+<div class="row">
+  <div class="column">
+<h2>CONTACT US</h2>
+<form>
+<fieldset>
+    First name:<br>
+    <input type="text" name="firstname"><br>
+    Last name:<br>
+    <input type="text" name="lastname"><br><br>
+    Email Address:<br>
+    <input type="text" name="firstname"><br>
+    Message:<br>
+    <input type="text" name="firstname"><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+ </div>
+<div class="column">
+
+<h2>FIND THE BEST BRUNCH SPOTS</h2>
+<div id="map">Map will go here</div>
+<div id="map" style="width:550px;height:235px;background:black"></div>
+<script>
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.12),
+        zoom: 11,
+        mapTypeId: google.maps.MapTypeId.sattelite
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?AIzaSyCXPZ9eabc1w7hlGoNZk5hFeb6AGs9LDkI&callback=myMap"></script>
+  </div>
+</div>
+>>>>>>> 8e9eaa55eb26d233b7b6e5502d50b250e1005cf4
 	</body>
 </html>
