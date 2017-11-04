@@ -82,18 +82,27 @@
     Last name:<br>
     <input type="text" name="lastname"><br><br>
     Email Address:<br>
-    <input type="text" name="firstname"><br>
+    <input type="text" name="emailaddress"><br>
     Message:<br>
-    <input type="text" name="firstname"><br>
+    <input type="text" name="message"><br>
     <input type="submit" value="Submit">
   </fieldset>
 </form>
+
+<!-- Social Media -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-pinterest"></a>
  </div>
 <div class="column">
 
 <h2>FIND THE BEST BRUNCH SPOTS</h2>
+Map will go here
 <div id="map">Map will go here</div>
-<div id="map" style="width:550px;height:235px;background:black"></div>
+<div id="map" style="width:620px;height:300px;background:#white"></div>
 <script>
 function myMap() {
     var mapOptions = {
@@ -107,5 +116,6 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCXPZ9eabc1w7hlGoNZk5hFeb6AGs9LDkI&callback=myMap"></script>
   </div>
 </div>
+
 	</body>
 </html>
