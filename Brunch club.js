@@ -1,1 +1,3 @@
-Brunch club.js
+$(document).ready(function(){
+      $('.parallax').parallax();
+    });
