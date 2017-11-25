@@ -1,0 +1,59 @@
+.section1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 3px solid white;
+	background-color: gray;
+	opacity: 0.8;
+}
+
+.container-fluid {
+	position: relative;
+	text-align: center;
+	color: black;
+	font-family: futura;
+	font-size: 60px;
+	margin: 30px;
+	background-color: #ffffff;
+	opacity: 0.6;
+	filter: alpha(opacity=60;);
+}
+
+.container-fluid1 {
+	text-align: center;
+	color: black;
+	font-family: futura;
+	font-size: 60px;
+	background-color: #ffffff;
+	opacity: 0.6;
+	filter: alpha(opacity=60;);
+}
+.container-fluid2 {
+	text-align: center;
+	color: black;
+	font-family: futura;
+	font-size: 60px;
+	background-color: #ffffff;
+	opacity: 0.6;
+	filter: alpha(opacity=60;);
+}
+
+h2 {
+	position: absolute;
+	top: 250px;
+	left: 0;
+	width: 100%;
+}
+
+h2 span{
+	position: center;
+	color: white;
+	font: futura;
+	font-size: 60px;
+	letter-spacing: -1px;
+	background: rgb(0, 0, 0); 
+	background: rgba (0, 0, 0, 0.7);
+	padding: 10px;
+}
+
