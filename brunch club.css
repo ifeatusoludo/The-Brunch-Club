@@ -188,11 +188,7 @@ p {
     color: grey;
     padding: 15px;
 } 
-}
 
-<<<<<<< HEAD
-
-=======
 .row:after {
     content: "";
     display: table;
@@ -220,22 +216,35 @@ p {
 .fa-facebook {
     background: black;
     color: white;
+    position: absolute;
+    left: 100px;
+    right: 100px;
 }
 
 /* Twitter */
 .fa-twitter {
     background: black;
     color: white;
+    position: absolute;
+    left: 200px;
+    right: 200px;
 }
 
 /* Instagram */
 .fa-instagram {
     background: black;
     color: white;
+    position: absolute;
+    left: 300px;
+    right: 300px;
 }
 
 /* Pinterest */
 .fa-pinterest {
     background: black;
     color: white;
+    position: absolute;
+    left: 400px;
+    right: 400px;
 }
+

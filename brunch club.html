@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewpoint" content="width=device-width, initial scale=1"> 
 	<head>
-		<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
-
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
 		<link rel='stylesheet' type='text/css' href='brunch club.css'>
 		<style> 
 			header {
@@ -23,46 +22,54 @@
 					display: inline;
 					padding: 0x 30px 0px 30px;
 				}
+			body {
+				position: relative;
+			}
 		</style> 
+  		<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		</head>
 	<body>
 		<header>
 			<!-- Navigation --> 
 			<div class="topnav" id="myTopnav">
-				<a href="#home">HOME</a>
-				<a href="./about.html">ABOUT</a>
-				<a href="#categories">CATEGORIES</a>
-				<a href="#submissions">SUBMISSIONS</a>
-				<a href="#contact">CONTACT</a>
+				<a href="#section1">HOME</a>
+				<a href="#section2">ABOUT</a>
+				<a href="#section3">CATEGORIES</a>
+				<a href="#section5">SUBMISSIONS</a>
 			</div>
 		</header>
 		<!-- Title of Website -->
 			<section>
-				<div class="container">
+				<div id ="section1" class="container">
 				<img src="Brunch Flatlay - Nicer.jpg" style="width:100%;">
 				<div class="centered">THE BRUNCH CLUB</div>
 			</div>
 			</section>
 		<!-- Explanation of Website -->
 		<section>
-			<div class="container-2">
+			<div id = "section2" class="container-2">
 			<img src="Brunch Flatlay 2.jpg" style="width:100%;">
 			<div class="centered-2">WHAT IS THIS?</div>
 		</div>
 		</section>
 		<!-- Brunch Categories -->
 		<section>
-			<div class="container-3">
+			<div id ="section3" class="container-3">
 			<img src="Brunch Flatlay 3.jpg" style="width:100%;">
-			<div class="centered-3">WHAT KIND OF BRUNCH DO YOU WANT?</div>
+			<div class="centered-3">BRUNCH CATEGORIES</div>
 		</div>
 		</section>
 		<!-- Submission Form -->
 		<section>
-			<div class="container-4">
+			<div id ="section4" class="container-4">
 			<img src="Brunch Flatlay 4.jpg" style="width:100%;">
-			<div class="centered-4">GIVE US YOUR BEST BRUNCH SPOT.</div>
+			<div class="centered-4">BRUNCH SPOT SUBMISSIONS</div>
 		</div>
+		</section>
+		<section>
+			<div id="section5" class="submissions">
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqzU5gaa3ArWuaxuRFUbWodz1iORtN4V3pacqgjmRQY02vPQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+			</div>
 		</section>
 <!-- Contact Form -->
 <div class="row">
@@ -92,22 +99,22 @@
 <div class="column">
 
 <h2>FIND THE BEST BRUNCH SPOTS</h2>
-Map will go here
-<div id="map">Map will go here</div>
-<div id="map" style="width:620px;height:300px;background:#white"></div>
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
 <script>
+
 function myMap() {
-    var mapOptions = {
-        center: new google.maps.LatLng(51.5, -0.12),
-        zoom: 11,
-        mapTypeId: google.maps.MapTypeId.sattelite
-    }
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:12,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+};
+
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?AIzaSyCXPZ9eabc1w7hlGoNZk5hFeb6AGs9LDkI&callback=myMap"></script>
-  </div>
-</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIvi8TjMR2jiMfgoLYB8ypjsRFanY79Ew&callback=myMap"></script>
+
 
 	</body>
 </html>
